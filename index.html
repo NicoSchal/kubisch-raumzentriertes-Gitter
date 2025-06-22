@@ -10,17 +10,19 @@
   </style>
 </head>
 <body>
-  <model-viewer
-    src="model.glb"
-    alt="Kubisch raumzentriertes Gitter"
-    auto-rotate
-    camera-controls
-    ar
-    ar-modes="webxr scene-viewer quick-look"
-    exposure="1.2"
-    field-of-view="45deg"
-    camera-orbit="0deg 75deg 1.5m"
-    scale="10 10 10">
-  </model-viewer>
+ <model-viewer
+  src="model.glb"
+  alt="Kubisch raumzentriertes Gitter"
+  auto-rotate
+  camera-controls
+  ar
+  ar-modes="webxr scene-viewer quick-look"
+  camera-orbit="0deg 75deg 2m"
+  field-of-view="45deg"
+  exposure="1.2"
+  min-camera-orbit="auto auto 0.5m"
+  max-camera-orbit="auto auto 10m"
+  camera-target="0m 0m 0m">
+</model-viewer>
 </body>
 </html>
